@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--  v0.1   -->
+<html>
+
+    <head>
+        <title>Venky Hsu</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+
+    <body>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="des.html">Design</a></li>
+                <li><a href="#">Drawing</a></li>
+                <li><a href="#">Photograph</a></li>
+            </ul>
+        </nav>
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- main -->
+            <div id="main">
+                <div id="portrait">
+                    <span class="por"><img src="images/tx2018-1-00922.jpg" alt="portrait" /></span>
+                </div>
+                <div id="content">
+                    <header>
+                        <h1>Venky Hsu</h1>
+                        <p>欢迎来到这里，希望你能喜欢</p>
+                        <p>欢迎来到这里，希望你能喜欢</p>
+                        <p>欢迎来到这里，希望你能喜欢</p>
+                    </header>
+                    <ul class="icons">
+                        <li><img src="images/icon_ali/gitHub.png" alt="github"></li>
+                        <li><a href="https://www.zcool.com.cn/u/18138480"><img src="images/icon_ali/zcool.png" alt="zcool"></a></li>
+                        <li><img src="images/icon_ali/social-wechat.png" alt="wechat"></li>
+                        <li><a href="mailto: 596708755@qq.com"><img src="images/icon_ali/email.png" alt="email"></a></li>
+                    </ul>
+                </div>
+                <!-- content -->
+            </div>
+            <!-- main -->
+            <!-- Footer -->
+            <footer id="footer">
+                2018 &copy; VENKY HSU
+                <br>Images By <a href="https://pixabay.com/en/users/lukasbieri-4664461/">Lukas Bieri</a> From <a href="https://pixabay.com/">Pixabay</a>
+            </footer>
+        </div>
+        <!-- bg -->
+        <script type="text/javascript">
+        var curIndex = 0;
+        var timeInterval = 10000;
+        var arr = new Array();
+        arr[0] = "images/bg1.jpg";
+        arr[1] = "images/bg2.jpg";
+        arr[2] = "images/bg3.jpg";
+        setInterval(changeImg, timeInterval);
+
+        function changeImg() {
+            if (curIndex == arr.length - 1) {
+                curIndex = 0;
+            } else {
+                curIndex += 1;
+            }
+            document.body.style.backgroundImage = "URL(" + arr[curIndex] + ")";
+        }
+        </script>
+    </body>
+
+</html>
